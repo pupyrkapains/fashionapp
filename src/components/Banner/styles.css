@@ -1,0 +1,103 @@
+.banner {
+  width: 100%;
+  max-width: 1590px;
+  height: 745px;
+  margin: 0 auto;
+  background-image: url(../../assets/images/ph1.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 70px;
+  padding-bottom: 100px;
+}
+
+.BC-style {
+  max-height: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #22262a;
+}
+
+.content-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 120px;
+  color: #22262a;
+}
+
+.buttons {
+  display: flex;
+  gap: 32px;
+}
+
+.style-button {
+  width: 145px;
+  height: 35px;
+  border: none;
+  background: #22262a;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-content {
+    padding-right: 40px;
+    padding-bottom: 80px;
+  }
+
+  .content-text {
+    font-size: 14px;
+  }
+
+  .content-title {
+    font-size: 54px;
+    height: 100px;
+  }
+
+  .BC-style {
+    max-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .BC-style {
+    max-height: 150px;
+  }
+
+  .content-text {
+    font-size: 12px;
+  }
+
+  .content-title {
+    font-size: 44px;
+  }
+
+  .style-button {
+    width: 100px;
+    height: 27px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
