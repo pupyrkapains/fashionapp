@@ -1,0 +1,116 @@
+.FirstBlock {
+  width: 100%;
+  max-width: 1200px;
+  height: 815px;
+  margin: 0 auto;
+}
+
+.FirstBlock-content {
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  grid-template-rows: repeat(2, minmax(auto 285px));
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px 1fr);
+  grid-auto-columns: minmax(100px 1fr);
+  gap: 25px;
+  justify-content: center;
+  align-content: center;
+}
+
+.img1 {
+  max-width: 550px;
+  width: 100%;
+  max-height: 285px;
+  height: auto;
+  grid-column: 1/3;
+}
+
+.img2,
+.img3 {
+  max-width: 264px;
+  width: 100%;
+  max-height: 265px;
+  height: auto;
+}
+
+.FBtwo {
+  max-width: 550px;
+  width: 100%;
+  max-height: 570px;
+  height: 100%;
+}
+
+.img4box {
+  max-width: 550px;
+  max-height: 575px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.img4 {
+  max-width: 549px;
+  width: 100%;
+  height: auto;
+}
+
+.img4box::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.FButton {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 2;
+  width: 203px;
+  height: 35px;
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .FirstBlock-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .FBone {
+    max-width: 450px;
+    max-height: 475px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img1 {
+    max-width: 450px;
+    width: 100%;
+    max-height: 185px;
+    height: auto;
+  }
+
+  .img2,
+  .img3 {
+    max-width: 164px;
+    width: 100%;
+    max-height: 165px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+}
