@@ -9,19 +9,15 @@ function FirstBlock(props) {
   return (
     <div className="FirstBlock">
       <div className="FirstBlock-content">
-        <div className="FBone">
           <img src={img1} alt="img1" className="img1" />
           <img src={img2} alt="img2" className="img2" />
           <img src={img3} alt="img3" className="img3" />
-        </div>
-        <div className="FBtwo">
           <div className="img4box">
             <img src={img4} alt="img4" className="img4" />
-            <button className="FButton">CATEGORY NAME</button>
           </div>
+          <button className="FButton">CATEGORY NAME</button>
         </div>
       </div>
-    </div>
   );
 }
 
